@@ -1,17 +1,13 @@
-/*const repeatString = function() {
+const repeatString = function(word, times) {
+  if(times < 0) return "ERROR";
+  let string = "";
 
-};  */
+  for(let i = 0; i < times; i++){
+    string += word;
+  };
+  return string;
+};  
 
-let wordToRepeat = "hey";
-let repetitions = 3;
-
-function repeatString(word, number){
-    for(let i = 0; i < number; i++){
-        return word;
-    };
-};
-
-repeatString(wordToRepeat, repetitions);
 
 // Do not edit below this line
 module.exports = repeatString;
